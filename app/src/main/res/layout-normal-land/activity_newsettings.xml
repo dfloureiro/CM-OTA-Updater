@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative">
+
+        <Switch
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchStartUp"
+            android:layout_gravity="center|top"
+            android:textSize="13sp"
+            android:text="isto é um teste de texto"
+            tools:ignore="NewApi"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp"
+        android:text="isto é um teste de texto"
+        android:id="@+id/textViewCheckEvery"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/switchStartUp"
+        android:layout_alignLeft="@+id/switchStartUp"
+        android:layout_alignStart="@+id/switchStartUp" />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="isto é um teste de texto"
+        android:id="@+id/radioButtonHour"
+        android:checked="false"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/textViewCheckEvery"
+        android:layout_alignLeft="@+id/textViewCheckEvery"
+        android:layout_alignStart="@+id/textViewCheckEvery" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="isto é um teste de texto"
+        android:id="@+id/radioButtonDay"
+        android:onClick="onRadioButtonClicked"
+        android:layout_alignTop="@+id/radioButtonHour"
+        android:layout_alignLeft="@+id/radioButtonHour"
+        android:layout_marginLeft="150dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="isto é um teste de texto"
+        android:id="@+id/radioButtonWeek"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/radioButtonHour"
+        android:layout_alignLeft="@+id/radioButtonHour"
+        android:layout_alignStart="@+id/radioButtonHour" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="isto é um teste de texto"
+        android:id="@+id/radioButtonNever"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/radioButtonDay"
+        android:layout_alignLeft="@+id/radioButtonDay"
+        android:layout_alignStart="@+id/radioButtonDay" />
+
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:id="@+id/buttonDelete"
+        android:textSize="13sp"
+        android:background="@drawable/mybutton"
+        android:text="isto é um teste de texto"
+        android:onClick="deleteOldDownloadedFiles"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Switch
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Isto é um teste de texto"
+        android:id="@+id/switchSound"
+        android:textSize="13sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/radioButtonWeek"
+        android:layout_alignRight="@+id/switchStartUp"
+        android:layout_alignEnd="@+id/switchStartUp"
+        android:layout_alignLeft="@+id/switchStartUp"
+        android:layout_alignStart="@+id/radioButtonWeek" />
+
+</RelativeLayout>

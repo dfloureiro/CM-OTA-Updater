@@ -1,0 +1,153 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Mainscreen">
+
+
+    <Button
+        android:layout_width="700sp"
+        android:layout_height="70sp"
+        android:id="@+id/ButtonCheckNow"
+        android:textSize="35sp"
+        android:background="@drawable/mybutton"
+        android:text="isto é um teste de texto"
+        android:onClick="checkNow"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/WelcomeMsg"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:text="isto é um teste de texto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/description"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        android:text="A forma mais fácil de atualizar o seu Android"
+        android:layout_below="@+id/WelcomeMsg"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/device_info"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Informações sobre o dispositivo:"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/description"
+        android:layout_alignLeft="@+id/ButtonCheckNow"
+        android:layout_alignStart="@+id/ButtonCheckNow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_device"
+        android:textSize="35sp"
+        android:text="dispositivo:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/device_info"
+        android:layout_alignLeft="@+id/device_info"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_device_name"
+        android:textSize="30sp"
+        android:text="nome do dispositivo"
+        android:layout_alignBottom="@+id/info_device"
+        android:layout_alignRight="@+id/ButtonCheckNow"
+        android:layout_alignEnd="@+id/ButtonCheckNow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_rom"
+        android:textSize="35sp"
+        android:text="ROM:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/info_device_name"
+        android:layout_alignLeft="@+id/device_info"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_rom_name"
+        android:textSize="30sp"
+        android:text="nome da ROM"
+        android:layout_alignBottom="@+id/info_rom"
+        android:layout_alignLeft="@+id/info_device_name"
+        android:layout_alignStart="@+id/info_device_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_version"
+        android:textSize="35sp"
+        android:text="versão ROM:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/info_rom_name"
+        android:layout_alignLeft="@+id/device_info"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_version_name"
+        android:textSize="30sp"
+        android:text="nome da versão"
+        android:layout_alignBottom="@+id/info_version"
+        android:layout_alignLeft="@+id/info_rom_name"
+        android:layout_alignStart="@+id/info_rom_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_android_version"
+        android:textSize="35sp"
+        android:text="android:"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/info_version"
+        android:layout_alignLeft="@+id/device_info"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_android_version_name"
+        android:textSize="30sp"
+        android:text="versão android"
+        android:layout_alignBottom="@+id/info_android_version"
+        android:layout_alignLeft="@+id/info_version_name"
+        android:layout_alignStart="@+id/info_version_name" />
+
+
+</RelativeLayout>
